@@ -1,0 +1,799 @@
+<!--
+  ===================================================================
+  FRIENDLY HP - 固定ページ本文 (WordPress 用)
+  ===================================================================
+  使い方:
+    1. WordPress 管理画面 → 固定ページ → 新規追加
+    2. ブロックエディタの場合: 「+」→「カスタムHTML」を追加し、本ファイルの
+       <body-content> 〜 </body-content> の間 (コメント除く全文) をそのまま貼る
+       ※ または「コードエディター」モードに切替え、本ファイル全文を貼る
+    3. クラシックエディタの場合: 「テキスト」タブに本ファイル全文を貼る
+    4. 公開
+  プレースホルダ ({{FR_ASSETS}} / {{FR_ADMIN_POST_URL}} / {{FR_NONCE}}) は
+  mu-plugin (friendly-hp.php) が the_content フィルタで自動置換します。
+  これらの文字列は変更しないでください。
+  ===================================================================
+-->
+
+<!-- ========== NAVIGATION SECTION ========== -->
+<nav id="top" class="navbar">
+    <div class="nav-container">
+        <div class="nav-brand">
+            <img src="{{FR_ASSETS}}/images/LogoSm.png" alt="FRIENDLY" class="logo-sm">
+        </div>
+       <div class="nav-actions">
+        <a href="#contact" class="btn-contact btn-contact-mobile">お問い合わせ</a>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        </div>
+        <ul class="nav-menu">
+            <button class="menu-close" aria-label="Close menu">
+                <span></span>
+                <span></span>
+            </button>
+            <li><a href="#solution">ソリューション全体像</a></li>
+            <li><a href="#features">選ばれる3つの理由</a></li>
+            <li><a href="#services">事業内容</a></li>
+            <li><a href="#case-studies">事例紹介</a></li>
+            <li><a href="#company">会社概要</a></li>
+            <li><a href="#contact" class="btn-contact btn-contact-desktop">お問い合わせ</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- ========== HERO SECTION ========== -->
+<section class="hero">
+
+    <div class="hero-bg-layer subtitle-animation"></div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line title-animation">御社の&quot;社外COOチーム&quot;として、</span>
+                    <span class="title-line title-animation">事業成長を実現します。</span>
+                </h1>
+                <p class="hero-subtitle title-animation">Design, management, business, and marketing</p>
+                <div class="hero-logo cube-animation">
+                    <img src="{{FR_ASSETS}}/images/LogoXl.png" alt="FRIENDLY" class="hero-xl">
+                </div>
+                <a href="#contact" class="btn-cta scrambletext-animation">
+                    <span class="hero-contact">CONTACT</span>
+                    <span class="circle-icon"></span>
+                </a>
+            </div>
+        </div>
+</section>
+
+<!-- ========== ABOUT US SECTION ========== -->
+<section class="about">
+    <div class="about-container">
+        <div class="about-content">
+            <div class="about-visual">
+                <div class="about-label subtitle-animation">
+                    <img src="{{FR_ASSETS}}/images/About-us.png" alt="About Us" class="about-logo">
+                </div>
+                <div class="fibonacci-div subtitle-animation">
+                    <img src="{{FR_ASSETS}}/images/Fibonacci.png" alt="fibonacci spiral" class="fibonacci-image">
+                </div>
+            </div>
+            <div class="about-text scrambletext-animation">
+                <p>FRIENDLYは戦略を描くだけのコンサルタントでも</p>
+                <p>言われた物を作るだけの制作会社でもありません</p>
+                <p>経営者の「右腕」となり、戦略設計から現場の実務までをワンストップで完遂する</p>
+                <p>中小企業のための、新しいビジネス・プロデュースの形です。</p>
+            </div>
+        </div>
+        <div class="about-mission title-animation">
+            <div class="mission-highlight">
+                <p><span class="highlight-text">「何から手をつければいいか分からない」</span></p>
+                <p>その悩み、まるごと私たちに<span class="highlight-text">お預けください</span></p>
+            </div>
+            <div class="mission-description">
+                <p>良い商品があるのに、<span class="highlight-text">売り方がわからない。</span>やりたいことはあるのに、<span class="highlight-text">人が足りない。</span></p>
+                <p><span class="highlight-text">組織を大きくしたいのに、仕組みがない...</span></p>
+                <p>FRIENDLYは、そんな経営者の<span class="highlight-text">悩みを共有し、</span></p>
+                <p><span class="highlight-text">伴走しながら課題を解決する「総合ビジネスプロデュース・カンパニー」</span>です。</p>
+            </div>
+            <div class="mission-final">
+                <p>私たちは、御社のボードメンバーのように経営課題に取り組み、</p>
+                <p><span class="highlight-text">「売れる仕組み」と「回る組織」を構築します。</span></p>
+                <p><span class="highlight-text">現場の実務から、未来を描く戦略まで。</span></p>
+                <p>御社の事業成長に伴走します。</p>
+            </div>
+            <div class="about-mission-img">
+                <img src="{{FR_ASSETS}}/images/Layer_1.svg" alt="About Image" class="about-image">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== SOLUTION SECTION (3 STEPS) ========== -->
+<section id="solution" class="solution">
+        <h2 class="section-title title-animation">FRIENDLY'S SOLUTION</h2>
+        <p class="section-subtitle subtitle-animation">ソリューション全体像</p>
+
+        <div class="solution-intro title-animation">
+            <div class="intro-highlights">
+                <p><span class="highlight-box">採用・育成の壁を越え、</span></p>
+                <p><span class="highlight-box">即戦力の「経営推進チーム」を</span></p>
+                <p><span class="highlight-box">今すぐ手に入れる。</span></p>
+            </div>
+            <div class="intro-description scrambletext-animation">
+                <p>優秀なマーケターやCOO候補を採用し、自社の文化に馴染ませ、戦力化するまでには、</p>
+                <p>膨大な時間とコストがかかります。</p>
+                <p>そもそも、市場に少ないハイスキル人材の獲得自体が困難な時代です。</p>
+                <p>FRIENDLYなら、その「採用・育成」のプロセスをすべてショートカットできます。</p>
+                <p> 個人のスキルに依存するのではなく、</p>
+                <p>すでに連携の取れたプロフェッショナルチームを「機能」としてインストールする。</p>
+                <p> それが、最短距離で事業を成長させるための強力な選択肢です。</p>
+            </div>
+        </div>
+
+        <!-- Solution Circles -->
+        <div class="steps-container">
+            <div class="steps-bg-layer steps-bg-1"></div>
+            <div class="steps-bg-layer steps-bg-2"></div>
+            <div class="steps-bg-layer steps-bg-3"></div>
+
+            <div class="step-header">
+                <div class="step-ellipse">
+                    <img src="{{FR_ASSETS}}/images/Ellipse.png" alt="" class="ellipse-img">
+                </div>
+
+                <!-- Card 1: Design -->
+                <div class="step-card" data-step="1">
+                    <div class="step-circle-wrapper">
+                        <div class="step-circle">
+
+                            <div class="step-circle front">
+                                <div class="step-inner">
+                                    <span class="step-label">Design</span>
+                                    <span class="step-sublabel">全体設計</span>
+                                    <p class="step-desc">経営視点を持つ<br />プロが設計</p>
+                                </div>
+                            </div>
+
+                            <div class="step-circle back">
+                                <div class="step-inner">
+                                    <p class="detailed-text">社内で育成するには何年も<br />かかる「経営・事業・マーケ<br />ティング」を全体俯瞰できる<br />視点で、最速で御社の事業戦<br />略を設計します。</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Run -->
+                <div class="step-card" data-step="1">
+                    <div class="step-circle-wrapper">
+                        <div class="step-circle">
+
+                            <div class="step-circle front">
+                                <div class="step-inner">
+                                    <span class="step-label">RUN</span>
+                                    <span class="step-sublabel">実行支援</span>
+                                    <p class="step-desc">教育コストゼロで<br />即実行できる</p>
+                                </div>
+                            </div>
+
+                            <div class="step-circle back">
+                                <div class="step-inner">
+                                    <p class="detailed-text">指示待ちのスタッフではありません。自ら考え動くチームが伴走するため、オンボーディングの時間をかけずに、PDCAを高速で回し始めます。</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Transfer -->
+                <div class="step-card" data-step="1">
+                    <div class="step-circle-wrapper">
+                        <div class="step-circle">
+
+                            <div class="step-circle front">
+                                <div class="step-inner">
+                                    <span class="step-label">Transfer</span>
+                                    <span class="step-sublabel">自走化</span>
+                                    <p class="step-desc">ノウハウを<br />社内の資産へ</p>
+                                </div>
+                            </div>
+
+                            <div class="step-circle back">
+                                <div class="step-inner">
+                                    <p class="detailed-text">最終的なゴールは、私たちが去った後も事業が伸び続けること。成果が出た運用フローや仕組みを御社に残し、真の「自走」を実現します。</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="step-footer title-animation">
+                <div class="step-brand">
+                    <img src="{{FR_ASSETS}}/images/Solution-Logo.png" alt="FRIENDLY" class="step-footer-logo">
+                </div>
+                <div class="step-title">提供価値の3つのステップ</div>
+            </div>
+        </div>
+</section>
+
+<!-- ========== FEATURES SECTION ========== -->
+<section id="features" class="features">
+        <div class="features-header">
+            <h2 class="features-title title-animation">FEATURE</h2>
+            <p class="features-subtitle subtitle-animation">FRIENDLYが選ばれる3つの理由</p>
+        </div>
+
+        <div class="features-grid">
+
+            <div class="features-bg-layer bg-img-animation"></div>
+
+            <div class="feature-card">
+                <div class="feature-tag">
+                    <div class="feature-number">01</div>
+                    <h3 class="feature-title">マーケティング思考で徹底分析し、本質的な課題解決へ</h3>
+                </div>
+                <div class="feature-content">
+                    <p>
+                    FREIENDLYは小手先のアドバイスをするコンサルではなく、言われたことをやる外注やBPOではありません。
+                    深い経験と幅広い知識と高い専門性を持ち、単なる外注という関係ではなく、社長のパートナーとして圧倒的な当事者意識を持って、「マーケティング思考」で貴社の経営状況を徹底的に分析します。
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-tag">
+                    <div class="feature-number">02</div>
+                    <h3 class="feature-title">完全オーダーメイドで、ヒアリングからPDCAまで伴走  </h3>
+                </div>
+                <div class="feature-content">
+                    <p>
+                    決まったパッケージ商品ではなく、すべての工程を、御社の状況に合わせた完全オーダーメイドで設計します。
+                    <br />【ヒアリング→調査分析→課題抽出→提案→実装・提供→PDCA推進】 この一連の流れをワンストップで対応。「こんなこと、頼めるかな？」という小さなご相談も大歓迎です。
+                    <br />戦略のご提案から日々の業務改善まで、目的達成のために必要な施策を幅広くサポートします。
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="feature-card">
+                <div class="feature-tag">
+                    <div class="feature-number">03</div>
+                    <h3 class="feature-title">結果重視の「チームビルディング」によるスピード対応</h3>
+                </div>
+                <div class="feature-content">
+                    <p>
+                    課題を最短距離で解決するために、プロジェクトごとに最適なチームを編成します。
+                    マーケター、デザイナー、セールスライター、プログラマー、コンサルタントなど、各分野のプロフェッショナルを招集。「誰が空いているか」ではなく「誰なら解決できるか」でメンバーを選ぶため、的確かつスピード感のあるサービス提供が可能です。 「お客様の課題をどう解決するか」だけに集中したチームが、御社の事業成長を支えます
+                    </p>
+                </div>
+            </div>
+
+        </div>
+</section>
+
+<!-- ========== OUR SERVICES SECTION ========== -->
+<section id="services" class="services">
+        <div class="services-layout">
+
+            <div class="services-bg-layer bg-img-animation"></div>
+
+            <div class="services-visual">
+                <div class="services-title-vertical title-animation">OUR SERVICES</div>
+                <span class="services-subtitle-vertical subtitle-animation">事業内容</span>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-header-left">
+                            <p class="service-number">01</p>
+                        </div>
+                        <div class="service-header-right">
+                            <h3 class="service-title">COO代行・経営BPO</h3>
+                            <p class="service-category">Acting CDO/Management BPO</p>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">外部COO / 役員機能を&quot;分業チーム&quot;で提供。<br />戦略設計→実行→仕組み化まで一気通貫で伴走します。</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-header-left">
+                            <p class="service-number">02</p>
+                        </div>
+                        <div class="service-header-right">
+                            <h3 class="service-title">WEBサイト制作</h3>
+                            <p class="service-category">Website design production</p>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">目的起点で&quot;成果に直結する&quot;WEBサイトやLPを制作。情報設計・コピー・デザイン・計測を統合します。</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-header-left">
+                            <p class="service-number">03</p>
+                        </div>
+                        <div class="service-header-right">
+                            <h3 class="service-title">SNS・マーケティング運用</h3>
+                            <p class="service-category">SNS/Marketing Management</p>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">目的設計→コンテンツ運用→数値改善までワンストップでお任せください。代行と内製化のハイブリッド支援をします。</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-header-left">
+                            <p class="service-number">04</p>
+                        </div>
+                        <div class="service-header-right">
+                            <h3 class="service-title">営業・セールス支援</h3>
+                            <p class="service-category">Sales and marketing support</p>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">&quot;再現性のある営業プロセス&quot;を構築し、個人技からチーム営業へ転換します。</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-header-left">
+                            <p class="service-number">05</p>
+                        </div>
+                        <div class="service-header-right">
+                            <h3 class="service-title">EC支援・商品ページ運用</h3>
+                            <p class="service-category">SNS/Marketing Management</p>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">ECの&quot;店舗運営&quot;を設計。商品ページ制作から運用・分析・業務改善まで伴走します。</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-header-left">
+                            <p class="service-number">06</p>
+                        </div>
+                        <div class="service-header-right">
+                            <h3 class="service-title">財務支援・資金繰り管理</h3>
+                            <p class="service-category">Sales and marketing support</p>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">キャッシュフロー可視化と予実管理の&quot;仕組み化&quot;で、意思決定を数字で支える体制を構築します。</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-header-left">
+                            <p class="service-number">07</p>
+                        </div>
+                        <div class="service-header-right">
+                            <h3 class="service-title">補助金・助成金コンサルティング</h3>
+                            <p class="service-category">Subsidy and grant consulting</p>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">最適な補助金の選定から申請・採択後の実績報告までを一気通貫で支援します。</p>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-header-left">
+                            <p class="service-number">08</p>
+                        </div>
+                        <div class="service-header-right">
+                            <h3 class="service-title">バックオフィス業務代行</h3><br /><h3 class="service-title">(経理・庶務・事務)</h3>
+                            <p class="service-category">Back office operations</p>
+                        </div>
+                    </div>
+                    <div class="service-content">
+                        <p class="service-description">経理・労務・総務の標準化と運用代行で、日常業務の&quot;止まらない仕組み&quot;を作ります。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<!-- ========== CASE STUDIES SECTION ========== -->
+<section id="case-studies" class="case-studies">
+    <div class="case-space-divider"></div>
+    <div class="section-absolute-adjust">
+        <h2 class="section-title-dark keania-one-regular title-animation">CASE STUDIES</h2>
+        <p class="section-subtitle-dark subtitle-animation">事例紹介</p>
+    </div>
+    <div class="case-study-container">
+
+        <div class="cases-grid">
+            <div class="case-card">
+                <span class="card-bg"></span>
+                <h3 class="case-title">老舗屋クリエイティブ企業の組織改革</h3>
+                <div class="case-tags">
+                    <span class="case-tag">COO代行・経営BPO</span>
+                </div>
+                <div class="case-image">
+                    <img src="{{FR_ASSETS}}/images/case-studies/case_studies_1.png" alt="case-study-1">
+                </div>
+                <span class="case-description">
+                    急激な成長に組織が追いつかず、業務が属人化していた状態から介入。 採用・育成の仕組み化と案件獲得フローの整備を同時に行い、 「社長がいなくても現場が回る」高収益な組織体制へと転換させました。
+                </span>
+            </div>
+
+            <div class="case-card">
+                <span class="card-bg"></span>
+                <h3 class="case-title">人材開運サービスの営業DX・マーケティング支援</h3>
+                <div class="case-tags">
+                    <span class="case-tag">COO代行・経営BPO</span>
+                </div>
+                <div class="case-image">
+                    <img src="{{FR_ASSETS}}/images/case-studies/case_studies_2.png" alt="case-study-2">
+                </div>
+                <span class="case-description">
+                    特定の営業マンの個人技や、アナログなテレアポに依存していた営業体制を一新。 Webマーケティングによるリード獲得の自動化と営業支援システム導入により、 「組織として安定的に受注を生み出す基盤」を構築しました。
+                </span>
+            </div>
+
+            <div class="case-card">
+                <span class="card-bg"></span>
+                <h3 class="case-title">BtoB専門商社のビジネスモデル転換</h3>
+                <div class="case-tags">
+                    <span class="case-tag">COO代行・経営BPO</span>
+                </div>
+                <div class="case-image">
+                    <img src="{{FR_ASSETS}}/images/case-studies/case_studies_3.png" alt="case-study-3">
+                </div>
+                <span class="case-description">
+                    既存顧客との薄利多売な取引構造からの脱却を目指し、事業戦略を再設計。 ターゲットの再定義と高付加価値なサービスメニューの開発を行い、 売上規模を維持しながら「利益率」を大幅に高めることに成功しました。
+                </span>
+            </div>
+
+            <div class="case-card">
+                <span class="card-bg"></span>
+                <h3 class="case-title">BtoC相談サービスの新規事業立ち上げ</h3>
+                <div class="case-tags">
+                    <span class="case-tag">SNS・マーケティング運用</span>
+                    <span class="case-tag">WEBサイト制作</span>
+                </div>
+                <div class="case-image">
+                    <img src="{{FR_ASSETS}}/images/case-studies/case_studies_4.png" alt="case-study-4">
+                </div>
+                <span class="case-description">
+                    全くのゼロベースからのサービス立ち上げにおいて、戦略設計からWeb制作まで伴走。 ターゲット心理を突いたWeb導線とSNS運用を組み合わせることで、認知ゼロの状態から「初月で問い合わせ獲得」という垂直立ち上げを実現しました。
+                </span>
+            </div>
+
+            <div class="case-card">
+                <span class="card-bg"></span>
+                <h3 class="case-title">先端テック企業の市場戦略・事業設計</h3>
+                <div class="case-tags">
+                    <span class="case-tag">COO代行・経営BPO</span>
+                </div>
+                <div class="case-image">
+                    <img src="{{FR_ASSETS}}/images/case-studies/case_studies_5.png" alt="case-study-5">
+                </div>
+                <span class="case-description">
+                    変化の激しい成長市場への参入において、事業の「勝ち筋」とロードマップを策定。 リソースを集中すべきポイントを明確にすることで投資判断の精度を高め、 無駄なコストをかけずに最短距離での事業拡大をサポートしました。
+                </span>
+            </div>
+
+            <div class="case-card">
+                <span class="card-bg"></span>
+                <h3 class="case-title">ライフスタイルメディアのブランド運用支援</h3>
+                <div class="case-tags">
+                    <span class="case-tag">SNS・マーケティング運用</span>
+                </div>
+                <div class="case-image">
+                    <img src="{{FR_ASSETS}}/images/case-studies/case_studies_6.png" alt="case-study-6">
+                </div>
+                <span class="case-description">
+                    ブランドの世界観を守ることと、フォロワー数などの数値を追うことの両立を支援。 属人化しないコンテンツ制作フローと運用体制を整えることで、 クオリティを落とさずにエンゲージメントを高め続けるファン作りを実現しました。
+                </span>
+            </div>
+
+            <div class="case-bg-props bg-img-animation"></div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== PROJECT PROGRESS SECTION ========== -->
+<section id="project-progress" class="project-progress-and-faq">
+    <div class="project-progress-wrapper">
+        <div class="project-progress-container">
+
+            <div class="project-progress-rightside">
+                <div class="progress-header">
+                    <h2 class="progress-title header-text-responsive responsive-line-height title-animation">PROJECT<br>PROGRESS</h2>
+                    <p class="progress-subtitle subtitle-animation">プロジェクトの構業</p>
+                </div>
+
+                <div class="progress-content scrambletext-animation">
+                    <p>
+                        プロジェクト進行の一例をご紹介します。<br />ヒアリング、調査分析、課題抽出、提案、サービスの提供、<br />PDCAの推進にいたるまで、幅広く対応することが可能です。
+                    </p>
+                </div>
+            </div>
+
+            <div class="process-wrapper">
+                <div class="process-step cube-animation">
+                    <div class="icon">
+                        <div class="cube-icon"></div>
+                    </div>
+                    <div class="content">
+                        <h3>1. 現状診断</h3>
+                        <p>
+                            まずは、事業・組織・数字の現状をヒアリング。
+                            既存資料やデータも拝見しながら、
+                            「本当に解くべき課題は何か」を一緒に言語化します。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step cube-animation">
+                    <div class="icon">
+                        <div class="cube-icon"></div>
+                    </div>
+                    <div class="content">
+                        <h3>2. 設計（ロードマップ・KPI）</h3>
+                        <p>
+                            いつまでに、どの状態を目指すのか。
+                            ロードマップとKPIを設定し、
+                            日々のアクションに落とし込みます。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step cube-animation">
+                    <div class="icon">
+                        <div class="cube-icon"></div>
+                    </div>
+                    <div class="content">
+                        <h3>3. 実装・実行</h3>
+                        <p>
+                            マーケター・デザイナー・バックオフィスなどが連携し、
+                            プロジェクトを実行。
+                            数字を見ながら柔軟に改善していきます。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step cube-animation">
+                    <div class="icon">
+                        <div class="cube-icon"></div>
+                    </div>
+                    <div class="content">
+                        <h3>4. 権限移譲・内製化</h3>
+                        <p>
+                            一定の成果が出た段階で、
+                            業務を社内に権限移譲。
+                            自走できる状態まで伴走します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<!-- ========== FAQ SECTION ========== -->
+<div id="faq" class="faq">
+        <div class="faq-container">
+            <div class="faq-header-wrapper">
+                <h2 class="faq-title header-text-responsive title-animation">FAQ</h2>
+                <p class="faq-subtitle subtitle-animation">よくある質問</p>
+            </div>
+
+            <div class="faq-list">
+                <div class="faq-item lists-animation">
+                    <span class="faq-bg"></span>
+                    <div class="faq-question scrambletext-animation">
+                        <span>Q.　地方の会社ですが、来社して打ち合わせしてもらえますか？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A.　基本はスピーディーなオンライン対応ですが、現場の空気感を知るためにも、必要に応じて対面でのミーティングや現地訪問も柔軟に行っています。詳細はお問い合わせ下さい。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item lists-animation">
+                    <span class="faq-bg"></span>
+                    <div class="faq-question scrambletext-animation">
+                        <span>Q.　まだ課題が整理できていないのですが、相談できますか？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A.　もちろん大丈夫です。「何がおかしい気はするが、言葉にできない」という段階こそ、私たちのお役に立てるタイミングです。お話を伺いながら、課題の整理からお手伝いします。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item lists-animation">
+                    <span class="faq-bg"></span>
+                    <div class="faq-question scrambletext-animation">
+                        <span>Q.　契約期間の縛りはありますか？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A.　課題やご予算に合わせて柔軟に設計可能です。単発のスポット支援から、年単位の顧問契約まで、御社のペースに合わせてプランをご提案します。</p>
+                    </div>
+                </div>
+
+                <div class="faq-item lists-animation">
+                    <span class="faq-bg"></span>
+                    <div class="faq-question scrambletext-animation">
+                        <span>Q.　社員を採用するのと、どちらが良いでしょうか？</span>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>A.　専門スキルを持つ社員を1名採用するには、採用コストや教育コスト、固定費のリスクが伴います。FRIENDLYなら、即戦力の「チーム」を必要なボリュームだけ活用できるため、リスクを抑えて組織機能を強化できます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== COMPANY PROFILE SECTION ========== -->
+<section id="company" class="company-profile">
+    <div class="company-container">
+        <div class="company-header-wrapper">
+            <h2 class="company-title header-text-responsive responsive-line-height title-animation">COMPANY PROFILE</h2>
+            <p class="company-subtitle subtitle-animation">会社概要</p>
+        </div>
+
+        <div class="company-table">
+            <div class="company-row lists-easing-animation">
+                <div class="company-label">会社名</div>
+                <div class="company-value">FRIENDLY株式会社</div>
+            </div>
+            <div class="company-row lists-easing-animation">
+                <div class="company-label">代表者</div>
+                <div class="company-value">代表取締役　幸野 裕史</div>
+            </div>
+            <div class="company-row lists-easing-animation">
+                <div class="company-label">設立</div>
+                <div class="company-value">2020年2月</div>
+            </div>
+            <div class="company-row lists-easing-animation">
+                <div class="company-label">資本金</div>
+                <div class="company-value">500,000円</div>
+            </div>
+            <div class="company-row lists-easing-animation">
+                <div class="company-label">所在地</div>
+                <div class="company-value">〒169-0075 東京都新宿区高田馬場2丁目17-3 東京三協信用金庫本店ビル</div>
+            </div>
+            <div class="company-row lists-easing-animation">
+                <div class="company-label">電話番号</div>
+                <div class="company-value">03-6822-5403</div>
+            </div>
+            <div class="company-row lists-easing-animation">
+                <div class="company-label">事業内容</div>
+                <div class="company-value">トータルマーケティング事業 / WEB制作事業 / SNS運用事業 / 動画制作事業 / 広告代理事業 / SEOライティング事業 / EC事業支援 / システム開発事業 / 新規事業支援</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ========== CONTACT SECTION ========== -->
+<section id="contact" class="contact">
+    <div class="contact-wrapper">
+        <div class="contact-container">
+            <h2 class="contact-title header-text-responsive title-animation">CONTACT</h2>
+            <p class="contact-subtitle subtitle-animation">お問い合わせ</p>
+            <p class="contact-description">まずは、現状の「モヤモヤ」をお聞かせください。</p>
+
+            <form class="contact-form" method="post" action="{{FR_ADMIN_POST_URL}}">
+                <input type="hidden" name="action" value="friendly_hp_contact">
+                <input type="hidden" name="_wpnonce" value="{{FR_NONCE}}">
+                <input type="hidden" name="_redirect" value="">
+                <!-- Honeypot: bots will fill this; humans won't see it -->
+                <div class="fr-hp-hp-field" aria-hidden="true">
+                    <label>このフィールドは空欄のままにしてください
+                        <input type="text" name="fr_hp_website" tabindex="-1" autocomplete="off">
+                    </label>
+                </div>
+
+                <div class="contact-form-group">
+                    <label class="contact-label" for="name">お名前</label>
+                    <input class="contact-input" type="text" id="name" name="name" placeholder="山田　太郎" required>
+                </div>
+
+                <div class="contact-form-group">
+                    <label class="contact-label" for="phone">電話番号</label>
+                    <input class="contact-input" type="tel" id="phone" name="phone" placeholder="電話番号（ハイフンなし）">
+                </div>
+
+                <div class="contact-form-group">
+                    <label class="contact-label" for="email">メールアドレス</label>
+                    <input class="contact-input" type="email" id="email" name="email" placeholder="メールアドレスを入力" required>
+                </div>
+
+                <div class="contact-form-group">
+                    <label class="contact-label" for="company">会社名</label>
+                    <input class="contact-input" type="text" id="company" name="company" placeholder="FRIENDLY株式会社">
+                </div>
+
+                <div class="contact-form-group">
+                    <label class="contact-label" style="align-self: self-start;" for="message">お問い合わせ内容</label>
+                    <textarea class="contact-textarea" id="message" name="message" placeholder="お問い合わせ内容を入力" required></textarea>
+                </div>
+
+                <div class="contact-form-group-privacy">
+                    <input type="checkbox" id="privacy" name="privacy" value="1" required>
+                    <label for="privacy">
+                        <a href="#" target="_blank" rel="noopener">個人情報の取扱い</a>に同意します
+                    </label>
+                </div>
+
+                <button type="submit" class="contact-submit-btn">
+                    <span class="contact-bg"></span>
+                    <span class="contact-btn-text">SEND</span>
+                    <span class="contact-btn-subtitle-text">送信する</span>
+                    <div class="contact-btn-icon-wrapper">
+                        <div class="contact-btn-icon"></div>
+                    </div>
+                </button>
+            </form>
+
+            <p class="contact-description contact-note1">
+                ご入力いただいた個人情報は、FRIENDLYへのお問い合わせに利用いたします。個人情報の開示等については、 取得する個人情報の取り扱いについてをご覧ください。
+            </p>
+        </div>
+
+        <div class="contact-illustration">
+        </div>
+    </div>
+</section>
+
+<!-- ========== FOOTER SECTION ========== -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="{{FR_ASSETS}}/images/Logo-footer.png" alt="FRIENDLY" class="footer-logo">
+            </div>
+            <nav class="footer-nav">
+                <div class="footer-col">
+                    <a href="#top">TOP</a>
+                    <a href="#solution">FRIENDLYについて</a>
+                    <a href="#solution">ソリューション全体像</a>
+                    <a href="#services">選ばれる3つの理由</a>
+                    <a href="#services">事業内容</a>
+                    <a href="#case-studies">事例紹介</a>
+                </div>
+                <div class="footer-col">
+                    <a href="#project-progress">プロジェクト進行例</a>
+                    <a href="#faq">よくある質問</a>
+                    <a href="#company">会社概要</a>
+                    <a href="#contact">お問い合わせ</a>
+                    <a href="#">プライバシーポリシー</a>
+                </div>
+
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright © FRIENDLY CO.,LTD. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+</button>

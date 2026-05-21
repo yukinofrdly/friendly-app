@@ -1,0 +1,20 @@
+(() => {
+    function debounce(fn, wait) {
+        let timer;
+        return function (...args) {
+            if (timer) {
+                clearTimeout(timer); // clear any pre-existing timer
+            }
+            const context = this; // get the current context
+            timer = setTimeout(() => {
+                fn.apply(context, args); // call the function if time expires
+            }, wait);
+        };
+    }
+
+    const debouncedCallback = debounce((callback = () => undefined) => callback(), 300);
+
+    window.utils = window.utils || {};
+    window.utils.debouncedCallback = debouncedCallback;
+    window.utils.debounced = debounce;
+})();
