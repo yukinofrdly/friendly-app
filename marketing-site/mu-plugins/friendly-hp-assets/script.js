@@ -18,6 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
+  // ========== SERVICE DETAIL ACCORDION ==========
+  document.querySelectorAll(".service-detail-toggle").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const card = btn.closest(".service-card")
+      if (!card) return
+      const isOpen = card.classList.toggle("detail-open")
+      btn.setAttribute("aria-expanded", isOpen ? "true" : "false")
+      if (btn.firstChild) {
+        btn.firstChild.textContent = isOpen ? "閉じる" : "詳細を見る"
+      }
+    })
+  })
+
   // ========== SMOOTH SCROLL ENHANCEMENT ==========
   const links = document.querySelectorAll('a[href^="#"]')
 
