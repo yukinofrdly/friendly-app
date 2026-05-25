@@ -2920,3 +2920,181 @@ body {
   color: #00A6A6;
   text-decoration: underline;
 }
+
+/* ========== PRICE SECTION (added from service v2 PDF) ========== */
+.price {
+  background: #111f30;
+  color: #ffffff;
+  padding: 6rem 0;
+  overflow: hidden;
+}
+.price .price-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.price .price-header-wrapper {
+  display: flex;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 3rem;
+}
+.price .price-title {
+  color: #fae22b;
+  font-family: "Keania One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 131px;
+  letter-spacing: 6.55px;
+  line-height: 1;
+}
+.price .price-subtitle {
+  color: #fae22b;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 1.8px;
+  margin-bottom: 14px;
+}
+.price .price-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+.price .price-card {
+  background: #ffffff;
+  border: 3px solid #fae22b;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  color: #111f30;
+  height: 100%;
+}
+.price .price-card-title {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  color: #111f30;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #111f30;
+}
+.price .price-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.price .price-plan {
+  text-align: center;
+}
+.price .price-plan-label {
+  font-size: 17px;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+}
+.price .price-plan-value {
+  font-family: "Keania One", sans-serif;
+  font-size: 48px;
+  color: #111f30;
+  line-height: 1.1;
+}
+.price .price-plan-value span {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 4px;
+}
+.price .price-plan-note {
+  font-size: 13px;
+  color: #6B7280;
+  line-height: 1.7;
+  margin-top: 0.5rem;
+}
+.price .price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #E5E7EB;
+}
+.price .price-row-label {
+  font-size: 16px;
+  font-weight: 700;
+}
+.price .price-row-value {
+  font-family: "Keania One", sans-serif;
+  font-size: 30px;
+  white-space: nowrap;
+}
+.price .price-row-value small {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  margin-left: 3px;
+}
+.price .price-row-value-sm {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+}
+.price .price-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.price .price-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.7;
+}
+.price .price-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  background: #00A6A6;
+  border-radius: 2px;
+}
+.price .price-footnote {
+  text-align: right;
+  color: #fae22b;
+  font-size: 13px;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .price .price-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .price .price-title {
+    font-size: 80px;
+  }
+}
+@media (max-width: 768px) {
+  .price {
+    padding: 4rem 0;
+  }
+  .price .price-container {
+    padding: 0 1.5rem;
+  }
+  .price .price-header-wrapper {
+    margin-bottom: 2rem;
+    gap: 10px;
+  }
+  .price .price-footnote {
+    text-align: left;
+  }
+}
